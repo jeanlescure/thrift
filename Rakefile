@@ -93,7 +93,7 @@ end
 
 desc 'Install the thrift gem'
 task :install => [:gem] do
-  unless sh 'gem', 'install', Dir.glob('thrift-*.gem').last
+  unless sh 'gem', 'install', Dir.glob('*thrift-*.gem').last
     $stderr.puts "Failed to install thrift gem"
     break
   end
@@ -102,5 +102,5 @@ end
 CLEAN.include [
   '.bundle', 'benchmark/gen-rb', 'coverage', 'ext/*.{o,bundle,so,dll}', 'ext/mkmf.log',
   'ext/Makefile', 'ext/conftest.dSYM', 'Gemfile.lock', 'mkmf.log', 'pkg',  'spec/gen-rb',
-  'test', 'thrift-*.gem'
+  'test', '*thrift-*.gem'
 ]

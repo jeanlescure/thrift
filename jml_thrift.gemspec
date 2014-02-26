@@ -2,11 +2,11 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
-  s.name        = 'thrift'
+  s.name        = 'jml_thrift'
   s.version     = '1.0.0.0'
-  s.authors     = ['Thrift Developers']
-  s.email       = ['dev@thrift.apache.org']
-  s.homepage    = 'http://thrift.apache.org'
+  s.authors     = ['Thrift Developers | Forked by Jean Lescure']
+  s.email       = ['jean@ticowebmedia.com']
+  s.homepage    = 'https://github.com/jeanlescure/thrift'
   s.summary     = %q{Ruby bindings for Apache Thrift}
   s.description = %q{Ruby bindings for the Apache Thrift RPC system}
   s.license = 'Apache 2.0'
@@ -14,8 +14,6 @@ Gem::Specification.new do |s|
 
   s.has_rdoc      = true
   s.rdoc_options  = %w[--line-numbers --inline-source --title Thrift --main README]
-
-  s.rubyforge_project = 'thrift'
 
   dir = File.expand_path(File.dirname(__FILE__))
 
